@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p0-unknown-content",
+    "title": "Unknown content type",
+    "messages": [
+      {
+        "id": "known-message",
+        "role": "user",
+        "content": "KNOWN_TEXT_BEFORE_UNKNOWN"
+      },
+      {
+        "id": "unknown-message",
+        "role": "assistant",
+        "content": {
+          "content_type": "future_widget_v99",
+          "widget": {
+            "private": "OPAQUE_METADATA_MARKER"
+          }
+        }
+      }
+    ]
+  }
+]

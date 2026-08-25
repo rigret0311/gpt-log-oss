@@ -1,0 +1,101 @@
+[
+  {
+    "id": "synthetic-conversation-graph",
+    "title": "Offline launch checklist",
+    "create_time": 1767225600,
+    "update_time": 1767225660,
+    "current_node": "assistant-current",
+    "mapping": {
+      "root": {
+        "id": "root",
+        "parent": null,
+        "children": ["user-1"],
+        "message": null
+      },
+      "user-1": {
+        "id": "user-1",
+        "parent": "root",
+        "children": ["assistant-old", "assistant-new"],
+        "message": {
+          "id": "message-user-1",
+          "author": {"role": "user"},
+          "create_time": 1767225601,
+          "content": {"content_type": "text", "parts": ["Plan a local launch checklist."]}
+        }
+      },
+      "assistant-old": {
+        "id": "assistant-old",
+        "parent": "user-1",
+        "children": [],
+        "message": {
+          "id": "message-assistant-old",
+          "author": {"role": "assistant"},
+          "create_time": 1767225602,
+          "content": {"content_type": "text", "parts": ["Use SQLite FTS5 locally."]}
+        }
+      },
+      "assistant-new": {
+        "id": "assistant-new",
+        "parent": "user-1",
+        "children": ["user-repeat-1", "user-repeat-2"],
+        "message": {
+          "id": "message-assistant-new",
+          "author": {"role": "assistant"},
+          "create_time": 1767225603,
+          "content": {"content_type": "text", "parts": ["Use SQLite FTS5 locally."]}
+        }
+      },
+      "user-repeat-1": {
+        "id": "user-repeat-1",
+        "parent": "assistant-new",
+        "children": [],
+        "message": {
+          "id": "message-user-repeat-1",
+          "author": {"role": "user"},
+          "create_time": 1767225604,
+          "content": {"content_type": "text", "parts": ["Keep this repeated sentence."]}
+        }
+      },
+      "user-repeat-2": {
+        "id": "user-repeat-2",
+        "parent": "assistant-new",
+        "children": ["assistant-current"],
+        "message": {
+          "id": "message-user-repeat-2",
+          "author": {"role": "user"},
+          "create_time": 1767225604,
+          "content": {"content_type": "text", "parts": ["Keep this repeated sentence."]}
+        }
+      },
+      "assistant-current": {
+        "id": "assistant-current",
+        "parent": "user-repeat-2",
+        "children": [],
+        "message": {
+          "id": "message-assistant-current",
+          "author": {"role": "assistant"},
+          "create_time": 1767225605,
+          "content": {"content_type": "text", "parts": ["Verify before release."]}
+        }
+      }
+    }
+  },
+  {
+    "id": "synthetic-conversation-list",
+    "title": "Flat export sample",
+    "messages": [
+      {
+        "id": "flat-1",
+        "role": "user",
+        "created_at": "2026-01-01T00:02:00Z",
+        "content": "Search remains offline."
+      },
+      {
+        "id": "flat-2",
+        "role": "assistant",
+        "created_at": "2026-01-01T00:02:01Z",
+        "content": "No network client is required."
+      }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "p0-shard-one",
+    "title": "Legacy duplicate",
+    "messages": [
+      {"id": "legacy-duplicate-message", "role": "user", "content": "LEGACY_DUPLICATE_MARKER"}
+    ]
+  }
+]

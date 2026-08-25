@@ -1,0 +1,23 @@
+[
+  {
+    "id": "p0-multimodal-assets",
+    "title": "Asset pointer boundary",
+    "messages": [
+      {
+        "id": "p0-multimodal-message",
+        "role": "user",
+        "content": {
+          "content_type": "multimodal_text",
+          "parts": [
+            "VISIBLE_ASSET_MESSAGE",
+            {
+              "content_type": "image_asset_pointer",
+              "asset_pointer": "sediment://ASSET_POINTER_URI_MARKER",
+              "name": "PRIVATE_ASSET_METADATA_MARKER"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

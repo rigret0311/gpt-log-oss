@@ -1,0 +1,14 @@
+[
+  {
+    "id": "source-id-primary",
+    "conversation_id": "source-id-conflicting-alias",
+    "title": "Conflicting identity aliases",
+    "messages": [
+      {
+        "id": "identity-conflict-message",
+        "role": "user",
+        "content": "IDENTITY_CONFLICT_MARKER"
+      }
+    ]
+  }
+]

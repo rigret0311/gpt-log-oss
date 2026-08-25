@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "id": "account-profile-id",
+      "title": "Account metadata sidecar",
+      "email": "synthetic@example.invalid"
+    }
+  ]
+}

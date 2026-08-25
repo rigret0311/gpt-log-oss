@@ -1,0 +1,41 @@
+[
+  {
+    "id": "p0-branch-conversation",
+    "title": "Current branch selection",
+    "current_node": "assistant-current",
+    "mapping": {
+      "root": {
+        "parent": null,
+        "children": ["user"],
+        "message": null
+      },
+      "user": {
+        "parent": "root",
+        "children": ["assistant-inactive", "assistant-current"],
+        "message": {
+          "id": "p0-branch-user",
+          "author": {"role": "user"},
+          "content": {"content_type": "text", "parts": ["Branch question"]}
+        }
+      },
+      "assistant-inactive": {
+        "parent": "user",
+        "children": [],
+        "message": {
+          "id": "p0-branch-inactive",
+          "author": {"role": "assistant"},
+          "content": {"content_type": "text", "parts": ["INACTIVE_BRANCH_MARKER"]}
+        }
+      },
+      "assistant-current": {
+        "parent": "user",
+        "children": [],
+        "message": {
+          "id": "p0-branch-current",
+          "author": {"role": "assistant"},
+          "content": {"content_type": "text", "parts": ["CURRENT_BRANCH_MARKER"]}
+        }
+      }
+    }
+  }
+]

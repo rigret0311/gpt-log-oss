@@ -1,0 +1,11 @@
+[
+  {
+    "id": "truncated-conversation",
+    "title": "Truncated input",
+    "messages": [
+      {
+        "id": "truncated-message",
+        "role": "user",
+        "content": "TRUNCATED_PREFIX_MARKER"
+      }
+    ]

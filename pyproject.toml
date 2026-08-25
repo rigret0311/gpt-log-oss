@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=83"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gptlog-core"
+version = "0.1.0"
+description = "Local-only ChatGPT export normalization and SQLite FTS5 search"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/rigret0311/gpt-log-oss"
+Repository = "https://github.com/rigret0311/gpt-log-oss"
+Issues = "https://github.com/rigret0311/gpt-log-oss/issues"
+
+[project.scripts]
+gptlog-core = "gptlog_core.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gptlog_core*"]

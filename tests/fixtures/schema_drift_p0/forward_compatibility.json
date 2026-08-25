@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p0-forward-compatible",
+    "title": "Forward compatible",
+    "future_conversation_field": "UNKNOWN_FIELD_MARKER",
+    "current_node": "message-node",
+    "mapping": {
+      "root": {
+        "parent": null,
+        "children": ["message-node"],
+        "message": null,
+        "future_node_field": "UNKNOWN_FIELD_MARKER"
+      },
+      "message-node": {
+        "parent": "root",
+        "children": [],
+        "future_node_field": {"text": "UNKNOWN_FIELD_MARKER"},
+        "message": {
+          "id": "p0-forward-message",
+          "author": {"role": "assistant", "future_author_field": "UNKNOWN_FIELD_MARKER"},
+          "content": {
+            "content_type": "text",
+            "parts": ["KNOWN_FORWARD_TEXT"],
+            "future_content_field": {"text": "UNKNOWN_FIELD_MARKER"}
+          },
+          "metadata": {"future_metadata_field": "UNKNOWN_FIELD_MARKER"},
+          "future_message_field": "UNKNOWN_FIELD_MARKER"
+        }
+      }
+    }
+  }
+]
