@@ -1,5 +1,8 @@
 # GPT-Log
 
+> **このリポジトリについて**: gpt-logのオープンソース公開用派生。初回準備のみで未継続（2026-11-16 棚卸し時点）
+
+
 Current source version: `0.1.0`. No package has been uploaded to a public registry.
 
 This small Python CLI imports local ChatGPT JSON exports into SQLite, normalizes conversations/messages, and searches message text through FTS5. Runtime code uses the Python standard library only and contains no network client.
